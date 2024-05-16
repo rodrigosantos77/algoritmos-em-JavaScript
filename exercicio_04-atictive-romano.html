@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+</head>
+
+<script>
+
+    function numRomano (tamNumRoman) { 
+
+    // Verificar se o comprimento da string romana está dentro do intervalo permitido
+    if (tamNumRoman.length < 1 || tamNumRoman.length > 15) {
+        throw new Error("O comprimento da string romana deve estar entre 1 e 15 caracteres.");
+    }
+
+
+const valores  = {      'I' : 1,
+                        'V' : 5, 
+                        'X' : 10,
+                        'L' : 50,
+                        'C' : 100,
+                        'D' : 500,
+                        'M' : 1000  }
+
+let  numeroInt = 0
+
+//estrutura de repetição para percorrer  o array 
+    for ( let n = 0 ; n < tamNumRoman.length ; n++){
+
+        //verificando se o proximo caractere tem valor maior que o anterior 
+
+        if(valores[tamNumRoman[n]] < valores[tamNumRoman[n + 1]]){
+            numeroInt -= valores[tamNumRoman[n]]  
+        }else{
+            numeroInt += valores[tamNumRoman[n]]
+        }
+    }
+        return numeroInt
+
+}   
+
+//funcao para o usuario digitar na tela o valor que quer converter 
+function imprimirRomano (){
+//ralizando a leitura da algarismo
+let algarismo = prompt("informe o algarismo romano:")
+            // chamando a funcao inicial
+            let numInt = numRomano(algarismo)
+            
+            //imprimir o resultado 
+        console.log("o algarismo romano informado convertido para inteiro é:", numInt)
+}
+//chamar a funcao de leitura 
+imprimirRomano()
+
+</script>
+</html>
+
+
+

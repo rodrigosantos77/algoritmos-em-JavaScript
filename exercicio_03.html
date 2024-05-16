@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+</head>
+
+<script>
+
+    // exercicio-03 - criando uma funcao que some dois valores n1+n2
+    //nao esquecer de passar os parametros n1+n2
+    function sum(){   //qiando se usa o metodo arguments n precisa passar paramentro
+       // console.log(arguments)
+        //refazendo a funcao como argumentos via estrutura de repeticao (for)
+        //realizando outra forma de exibir a soma dos numeros no array
+        let result = 0
+        for(const n of arguments){
+            result += n  //variavel result recebe o valor do n e atribui +1 para outro n
+        }
+         return result //aplicando o return evita de atribuir para uma constante
+    }
+      console.log(sum(2,2,3,4,5,6)) 
+    </script>
+
+
+
+
+</html>
