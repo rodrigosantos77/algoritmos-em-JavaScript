@@ -1,0 +1,53 @@
+
+
+<script>
+/*
+Problema 2: Estrutura Condicional
+Descrição:
+Escreva um algoritmo que:
+
+1- Peça ao usuário para inserir um número entre 1 e 7.
+2- Use uma estrutura condicional para determinar e exibir o dia da semana correspondente ao número (1 = Domingo, 2 = Segunda-feira, etc.).
+
+    (ler o numero de dias:)
+
+    case:
+    n_dia == 1
+    console.log("")
+
+*/
+
+let N_dia = prompt ("informe o numero de 1 a 7 para idicar o dia da semana")
+    N_dia = Number(N_dia)
+
+    //processamento case
+    switch (N_dia) {   //se isso for verdade entao:
+        case 1:  //obrigatorio volocar os " : " apos cada condição
+        console.log("Hoje o dia na semana é Domingo!")
+            break;
+
+            case 2:
+            console.log("Hoje o dia na semana é Segunda-Feira!")
+            break;
+            case 3:
+            console.log("Hoje o dia na semana é Terça-Feira!")
+            break;
+            case 4:
+            console.log("Hoje o dia na semana é Quarta-Feira!")
+            break;
+            case 5:
+            console.log("Hoje o dia na semana é Quinta-Feira!")
+            break;
+            case 6:
+            console.log("Hoje o dia na semana é Sexta-Feira!")
+            break;
+            case 7:
+            console.log("Hoje o dia na semana é Sabado!")
+            break;
+            default:
+            console.log("numero nao se enquadra dentre os numeros de 1 a 7")
+        }   
+
+        
+
+</script>

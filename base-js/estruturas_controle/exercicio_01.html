@@ -1,0 +1,30 @@
+<script>
+/*
+Problema: Verificação de Idade para Acesso a um Evento
+Você está desenvolvendo um sistema de verificação de idade para um evento exclusivo para maiores de 18 anos. Escreva um programa que faça o seguinte:
+
+Peça ao usuário para inserir sua idade.
+Se a idade for maior ou igual a 18 anos, exiba uma mensagem dizendo "Acesso permitido".
+Se a idade for menor que 18 anos, exiba uma mensagem dizendo "Acesso negado".
+*/
+
+  
+  //usuario entra com a idade
+      let idade = prompt("entre com sua idade")
+    
+     
+     //realizando o tratamento e conversao de string em inteiro
+     let idadeNumero = Number(idade)
+
+     //tratamento de verificar se o usuario esta inserindo um numero valido
+        if( isNaN(idadeNumero)){
+            console.log("   por favor insira um numero valido")
+        }else{
+            //processo de tratamento da idade
+            if(idadeNumero >= 18) {
+    console.log(" idade alcancada:acesso permitido")
+}else{
+    console.log(" idade minima nao alcancada:acesso Negado")
+}
+        }
+</script>
